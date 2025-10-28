@@ -1,6 +1,6 @@
 import {
     SiAngular,
-    SiCss, SiDocker, SiGit,
+    SiCss, SiDocker, SiGit, SiGithub,
     SiHtml5,
     SiNextdotjs,
     SiReact, SiShopify, SiSpring,
@@ -85,6 +85,48 @@ export const experienceData = [
 
 export const projectsData = [
     {
+        title: "Test",
+        image: "https://api.dicebear.com/9.x/glass/svg?seed=Adrian",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin neque in ante facilisis, ac efficitur massa sodales. Quisque ac hendrerit lacus",
+        technologies: ["Angular", "Tailwind", "GSAP"],
+        links: [
+            {
+                title: "Github",
+                url: "https://www.dicebear.com/",
+                icon: <SiGithub/>,
+            }
 
-    }
+        ],
+        dates: "Jan 2024"
+    },
+    {
+        title: "UT Tracker",
+        image: "https://api.dicebear.com/9.x/glass/svg?seed=Adrian",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin neque in ante facilisis, ac efficitur massa sodales. Quisque ac hendrerit lacus",
+        technologies: ["Angular", "Tailwind", "GSAP"],
+        links: [
+            {
+                title: "Github",
+                url: "https://www.dicebear.com/",
+                icon: <SiGithub/>,
+            }
+
+        ],
+        dates: "Jan 2024"
+    },
+    {
+        title: "Portfolio",
+        image: "https://api.dicebear.com/9.x/glass/svg?seed=Adrian",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin neque in ante facilisis, ac efficitur massa sodales. Quisque ac hendrerit lacus",
+        technologies: ["Angular", "Tailwind", "GSAP"],
+        links: [
+            {
+                title: "Github",
+                url: "https://www.dicebear.com/",
+                icon: <SiGithub/>,
+            }
+
+        ],
+        dates: "Jan 2024"
+    },
 ]
