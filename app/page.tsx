@@ -1,14 +1,17 @@
 import {ThemeToggle} from "@/src/components/theme-toggle";
+import {Header} from "@/src/components/header";
+import {Hero} from "@/src/components/hero";
+import {About} from "@/src/components/about";
+import {Experience} from "@/src/components/experience";
 
 export default function Home() {
   return (
       <>
           <div className="container flex flex-col items-center">
-              <p>Header</p>
-              <p>Intro</p>
-              <p>SectionDivider</p>
-              <p>About</p>
-              <p>Experiences</p>
+              <Header />
+              <Hero/>
+              <About/>
+              <Experience/>
               <p>Projects</p>
               <p>Contact</p>
               <p>Footer</p>
