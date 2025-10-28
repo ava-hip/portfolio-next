@@ -7,6 +7,9 @@ import {
     SiTailwindcss,
     SiTypescript
 } from "@icons-pack/react-simple-icons";
+import { Link } from "lucide-react";
+
+export const about = "Passionate about computers and technologies since I was a kid, I started my journey with mods for video games. After completing a technology degree, I decided to make it my profession, I devote my free time to more creative projects that allow me to experiment with new ways of coding and try out new technologies, but also to my passion for sports"
 
 export const links = [
     {
@@ -32,17 +35,17 @@ export const links = [
 ] as const;
 
 export const skillsData = [
-    { icon:  <SiHtml5 size={"48px"}/>},
-    { icon:  <SiCss size={"48px"}/>},
-    { icon:  <SiTailwindcss size={"48px"}/>},
-    { icon:  <SiTypescript size={"48px"}/>},
-    { icon:  <SiAngular size={"48px"}/>},
-    { icon:  <SiReact size={"48px"}/>},
-    { icon:  <SiNextdotjs size={"48px"}/>},
-    { icon:  <SiSpring size={"48px"}/>},
-    { icon:  <SiGit size={"48px"}/>},
-    { icon:  <SiDocker size={"48px"}/>},
-    { icon:  <SiShopify size={"48px"}/>},
+    { icon:  <SiHtml5 size={"36px"}/>},
+    { icon:  <SiCss size={"36px"}/>},
+    { icon:  <SiTailwindcss size={"36px"}/>},
+    { icon:  <SiTypescript size={"36px"}/>},
+    { icon:  <SiAngular size={"36px"}/>},
+    { icon:  <SiReact size={"36px"}/>},
+    { icon:  <SiNextdotjs size={"36px"}/>},
+    { icon:  <SiSpring size={"36px"}/>},
+    { icon:  <SiGit size={"36px"}/>},
+    { icon:  <SiDocker size={"36px"}/>},
+    { icon:  <SiShopify size={"36px"}/>},
 ] as const;
 
 export const experienceData = [
@@ -51,8 +54,8 @@ export const experienceData = [
         company: "Dawan",
         companyLogo: "https://pbs.twimg.com/profile_images/943883334190555139/4cJWC4T7_400x400.jpg",
         description: [
-            "Création et optimisation d’API REST avec Java (Spring Boot) pour un intranet utilisé par 300 utilisateurs, en assurant l'intégration avec des bases de données MySQL via JPA/Hibernate.",
-            "Conception et implémentation d'interfaces utilisateur responsives avec Angular et Tailwindcss.",
+            "Designed and optimized REST APIs with Java (Spring Boot) for an intranet used by 300 users, ensuring seamless integration with MySQL databases through JPA/Hibernate.",
+            "Developed responsive user interfaces using Angular and Tailwind CSS",
         ],
         period: "2024",
         technologies: ["Spring", "JPA", "Hibernate", "Angular", "Gitlab"]
@@ -62,9 +65,9 @@ export const experienceData = [
         company: "Freelancing",
         companyLogo: "https://api.dicebear.com/9.x/glass/svg?seed=Emery",
         description: [
-            "Développement et personnalisation de sites e-commerce : Création et configuration de 3 boutiques en ligne avec WordPress (WooCommerce) et Shopify, en assurant une expérience utilisateur fluide.",
-            "Personnalisation avancée des thèmes : Modification et développement de thèmes Shopify en liquid pour répondre aux besoins spécifiques des clients.",
-            "Optimisation SEO : Mise en place des bonnes pratiques SEO pour améliorer le référencement"
+            "Developed and customized e-commerce websites: created and configured three online stores using WordPress (WooCommerce) and Shopify, ensuring a smooth and engaging user experience",
+            "Performed advanced theme customization: modified and developed Shopify themes in Liquid to meet clients’ specific needs.",
+            "Implemented SEO best practices to improve search engine visibility and overall ranking."
 
         ],
         period: "2023 - Today",
@@ -75,8 +78,9 @@ export const experienceData = [
         company: "Air&Smart",
         companyLogo: "https://airnsmart.com/wp-content/uploads/2025/01/PASTILLE-AnS.png",
         description: [
-            "Création et optimisation d’API REST avec Java (Spring Boot) pour un intranet utilisé par 300 utilisateurs, en assurant l'intégration avec des bases de données MySQL via JPA/Hibernate.",
-            "Conception et implémentation d'interfaces utilisateur responsives avec Angular et Tailwindcss.",
+            "E-commerce management: Administered the product catalog on PrestaShop, handling additions, updates, stock management, and product pages.",
+            "Development: Implemented PHP and HTML/CSS modifications as needed for site updates.",
+            "SEO optimization: Improved organic search rankings through best practices."
         ],
         period: "2022",
         technologies: ["Prestashop", "PHP", "SEO", "PHP", "Excel"]
@@ -85,48 +89,52 @@ export const experienceData = [
 
 export const projectsData = [
     {
-        title: "Test",
-        image: "https://api.dicebear.com/9.x/glass/svg?seed=Adrian",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin neque in ante facilisis, ac efficitur massa sodales. Quisque ac hendrerit lacus",
-        technologies: ["Angular", "Tailwind", "GSAP"],
+        title: "Make-up Artist Portfolio",
+        video: "/mua.mp4",
+        description: "Developed a make-up artist’s portfolio with animated image galleries, performance optimization, and responsive design",
+        technologies: ["Angular", "Typescript", "Tailwind", "GSAP"],
         links: [
             {
-                title: "Github",
-                url: "https://www.dicebear.com/",
+                title: "Website",
+                url: "https://laurynpiolet.fr",
+                icon: <Link />,
+            },
+            {
+                title: "Source",
+                url: "https://github.com/ava-hip/lauryn-piolet-mua",
                 icon: <SiGithub/>,
             }
 
         ],
-        dates: "Jan 2024"
+        dates: "March 2025"
     },
     {
         title: "UT Tracker",
-        image: "https://api.dicebear.com/9.x/glass/svg?seed=Adrian",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin neque in ante facilisis, ac efficitur massa sodales. Quisque ac hendrerit lacus",
-        technologies: ["Angular", "Tailwind", "GSAP"],
+        video: "/uttracker.mp4",
+        description: "Developed an app to track weekly performances in FC’s Champions mode, allowing users to log their weekend results and explore in-depth stats to analyze their game and improve performance.",
+        technologies: ["NextJS", "React", "TypeScript", "Prisma", "Tailwind"],
         links: [
             {
-                title: "Github",
-                url: "https://www.dicebear.com/",
-                icon: <SiGithub/>,
+                title: "Website",
+                url: "https://uttracker.fr",
+                icon: <Link />,
             }
 
         ],
-        dates: "Jan 2024"
+        dates: "Jan 2025 - Today"
     },
     {
-        title: "Portfolio",
-        image: "https://api.dicebear.com/9.x/glass/svg?seed=Adrian",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin neque in ante facilisis, ac efficitur massa sodales. Quisque ac hendrerit lacus",
-        technologies: ["Angular", "Tailwind", "GSAP"],
+        title: "Biscuiterie St-Guilhem",
+        video: "/biscuiterie.mp4",
+        description: "Built an e-commerce site for a biscuit shop, combining SEO expertise and creative design to showcase their artisanal products.",
+        technologies: ["Wordpress", "WooCommerce", "SEO", "PHP"],
         links: [
             {
-                title: "Github",
-                url: "https://www.dicebear.com/",
-                icon: <SiGithub/>,
-            }
-
+                title: "Website",
+                url: "https://biscuiteriesaintguilhem.fr/",
+                icon: <Link />,
+            },
         ],
-        dates: "Jan 2024"
+        dates: "June 2023"
     },
 ]

@@ -3,9 +3,10 @@
 import {useSectionInView} from "@/src/components/hero";
 import {experienceData} from "@/src/lib/data";
 import {cn} from "@/src/lib/utils";
-import {Building, Calendar} from "lucide-react";
+import {Building} from "lucide-react";
 import {Badge} from "@/src/components/ui/badge";
 import {Avatar, AvatarFallback, AvatarImage} from "@/src/components/ui/avatar";
+import React from "react";
 
 export const Experience = () => {
     const { ref } = useSectionInView('Experience')
@@ -13,10 +14,12 @@ export const Experience = () => {
         <section
             ref={ref}
             id="experience"
-            className="my-10 flex w-full scroll-mt-28 flex-col items-center md:mb-20">
-            <div className="mb-10 text-center">
-                <h2 className="font-heading text-3xl font-semibold">Experience</h2>
-                <p className="text-muted-foreground mt-3 text-sm">Bla bla bla</p>
+            className="gap-4 flex w-full max-w-[800px] scroll-mt-28 flex-col items-center md:mb-20">
+            <div className="flex flex-col gap-2 self-start">
+                <h2 className="text-2xl font-bold">Experience</h2>
+                <div className="prose text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+                    Professional experience showcasing web development, e-commerce, and full-stack projects
+                </div>
             </div>
             <div className="relative max-w-screen-md">
                 {experienceData.map(
@@ -29,30 +32,31 @@ export const Experience = () => {
                                 <div className="border-primary bg-background absolute left-[-5px] top-0 size-3 rounded-full border-2" />
                             </div>
                             <div
-                                className={cn('flex gap-2 items-center')}
+                                className={cn('flex gap-2 items-center justify-between')}
                             >
-                                <div className="flex size-9 shrink-0 items-center justify-center rounded-full border">
-                                    <Avatar>
-                                        <Avatar>
-                                            <AvatarImage src={companyLogo} />
-                                            <AvatarFallback>
-                                                <Building/>
-                                            </AvatarFallback>
-                                        </Avatar>
+                                <div className="flex gap-3 items-center">
+                                    <Avatar className="h-8 w-8">
+                                        <AvatarImage src={companyLogo} />
+                                        <AvatarFallback>
+                                            <Building/>
+                                        </AvatarFallback>
                                     </Avatar>
+                                    <div className="flex flex-col">
+                                        <span className="text-lg font-semibold">{company}</span>
+                                        <h3 className="inline-flex items-center justify-center leading-none text-xs sm:text-sm">
+                                            {title}
+                                        </h3>
+                                    </div>
                                 </div>
-                                <span className="text-lg font-semibold">{company}</span>
+                                <time className=" font-light font-sans text-xs">{period}</time>
                             </div>
-                            <div>
-                                <h3 className="text-xl font-medium">{title}</h3>
-                                <div className="mt-1 flex items-center gap-2 text-sm">
-                                    <Calendar className="size-4" />
-                                    <span>{period}</span>
-                                </div>
+                            <div className="flex flex-col my-3">
+                                <ul className="list-disc">
+                                    {description.map((paragraph, index) => (
+                                        <li className="text-muted-foreground" key={index}>{paragraph}</li>
+                                    ))}
+                                </ul>
                             </div>
-                            {description.map((paragraph, index) => (
-                                <p className="text-muted-foreground mb-1" key={index}>- {paragraph}</p>
-                            ))}
                             <div className="flex flex-wrap gap-2 mt-1">
                                 {technologies.map((tech, index) => (
                                     <Badge key={index}>

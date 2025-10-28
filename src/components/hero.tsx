@@ -5,7 +5,7 @@ import {createContext, PropsWithChildren, useContext, useEffect, useState} from 
 import {useInView} from "react-intersection-observer";
 import Link from "next/link";
 import {Button} from "@/src/components/ui/button";
-import {ArrowRight, Download, Github, Linkedin} from "lucide-react";
+import {ArrowRight, Download, Linkedin} from "lucide-react";
 import {SiGithub} from "@icons-pack/react-simple-icons";
 
 export const Hero = () => {
@@ -14,7 +14,7 @@ export const Hero = () => {
         <section
             ref={ref}
             id="home"
-            className="my-10 flex scroll-mt-96 mb-48 flex-col items-center gap-5 text-center sm:mt-28"
+            className="my-10 flex scroll-mt-96 mb-24 flex-col items-center gap-5 text-center sm:mt-28"
         >
             <div>
                 <Link
@@ -29,14 +29,13 @@ export const Hero = () => {
                 </Link>
             </div>
             <h1 className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl">
-                Hi, I&#39;m a{' '}
+                Hi, I&#39;m {' '}
                 <span className="bg-gradient-to-r from-emerald-500 to-emerald-900 bg-clip-text text-transparent">
-                  Developer
+                  Hippolyte
                 </span>{' '}
-                creating modern web apps.
             </h1>
             <p className="text-muted-foreground max-w-xl">
-                Bla bla bla
+                A fullstack developer, bla bla bla
             </p>
             <div className="flex flex-row gap-2">
                 <Button asChild size="lg" className="rounded-xl">
@@ -45,7 +44,7 @@ export const Hero = () => {
                     </Link>
                 </Button>
                 <Button variant="outline" size="lg" className="hidden sm:flex rounded-xl" asChild>
-                    <a href="#" download>
+                    <a href="/CV_GAUTHERONHippolyte.pdf" download>
                         Download CV <Download className="ml-2 size-4" />
                     </a>
                 </Button>

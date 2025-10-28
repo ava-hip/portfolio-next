@@ -17,9 +17,7 @@ export const Header = () => {
         useActiveSection();
 
     return (
-        <motion.header
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+        <header
             className="sm:bg-background/80 sticky top-5 z-20 my-5 flex items-center gap-2 sm:top-5 sm:my-5 sm:rounded-full sm:border sm:px-2 sm:py-3 sm:backdrop-blur-sm"
         >
             <Dialog open={isOpen} onOpenChange={setIsOpen}>
@@ -85,6 +83,6 @@ export const Header = () => {
                     ))}
                 </ul>
             </nav>
-        </motion.header>
+        </header>
     )
 }

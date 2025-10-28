@@ -4,6 +4,7 @@ import {Hero} from "@/src/components/hero";
 import {About} from "@/src/components/about";
 import {Experience} from "@/src/components/experience";
 import {Projects} from "@/src/components/projects";
+import {Contact} from "@/src/components/contact";
 
 export default function Home() {
   return (
@@ -14,8 +15,7 @@ export default function Home() {
               <About/>
               <Experience/>
               <Projects/>
-              <p>Contact</p>
-              <p>Footer</p>
+              <Contact/>
           </div>
           <ThemeToggle className="bg-background hidden sm:fixed sm:bottom-8 sm:right-8 sm:flex" />
       </>
