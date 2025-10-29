@@ -35,7 +35,7 @@ export const Hero = () => {
                 </span>{' '}
             </h1>
             <p className="text-muted-foreground max-w-xl">
-                A fullstack developer, bla bla bla
+                I build fast, modern, and user-centered web apps.
             </p>
             <div className="flex flex-row gap-2">
                 <Button asChild size="lg" className="rounded-xl">

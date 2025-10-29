@@ -18,7 +18,7 @@ export const Experience = () => {
             <div className="flex flex-col gap-2 self-start">
                 <h2 className="text-2xl font-bold">Experience</h2>
                 <div className="prose text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-                    Professional experience showcasing web development, e-commerce, and full-stack projects
+                    Professional experience showcasing web development, e-commerce, and full-stack projects.
                 </div>
             </div>
             <div className="relative max-w-screen-md">
