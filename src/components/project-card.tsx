@@ -29,7 +29,7 @@ export function ProjectCard({
 }: Props){
     return (
         <Card
-            className={"flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full min-w-[300px] py-0 gap-2 hover:scale-101"}
+            className={"flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full min-w-[200px] md:min-w-[300px] py-0 gap-2 hover:scale-101"}
         >
             <Link href='#' className="block cursor-default">
                 {video && (

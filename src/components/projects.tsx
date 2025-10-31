@@ -17,7 +17,7 @@ export const Projects = () => {
                 <h2 className="font-heading text-3xl font-semibold">Projects</h2>
                 <p className="text-muted-foreground mt-3 text-sm">Personal and professional projects I worked on.</p>
             </div>
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] min-w-[500px] mx-auto">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] lg:min-w-[500px] min-w-[300px] mx-auto">
                 {projectsData.map((project: TProject) => (
                     <ProjectCard
                         key={project.title}
