@@ -51,6 +51,17 @@ export const skillsData = [
 export const experienceData = [
     {
         title: "Fullstack developer",
+        company: "GalileIA",
+        companyLogo: "https://galile-ia.fr/wp-content/uploads/2024/06/cropped-galile_ia_favicon-192x192.png",
+        description: [
+            "Designed and optimized REST APIs with Java (Spring Boot) for an intranet used by 300 users, ensuring seamless integration with MySQL databases through JPA/Hibernate.",
+            "Developed responsive user interfaces using Angular and Tailwind CSS",
+        ],
+        period: "2026 - Now",
+        technologies: ["Python", "Svelte", "AWS"]
+    },
+    {
+        title: "Fullstack developer",
         company: "Dawan",
         companyLogo: "https://pbs.twimg.com/profile_images/943883334190555139/4cJWC4T7_400x400.jpg",
         description: [
@@ -70,7 +81,7 @@ export const experienceData = [
             "Implemented SEO best practices to improve search engine visibility and overall ranking."
 
         ],
-        period: "2023 - Today",
+        period: "2023 - 2025",
         technologies: ["Wordpress", "Shopify", "SEO", "PHP", "Liquid"]
     },
     {
