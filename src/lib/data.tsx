@@ -63,7 +63,7 @@ export const experienceData = [
     {
         title: "Fullstack developer",
         company: "Dawan",
-        companyLogo: "https://pbs.twimg.com/profile_images/943883334190555139/4cJWC4T7_400x400.jpg",
+        companyLogo: "https://www.activateurdeprogres.fr/sites/default/files/activator_form/logo%20dawan.png",
         description: [
             "Designed and optimized REST APIs with Java (Spring Boot) for an intranet used by 300 users, ensuring seamless integration with MySQL databases through JPA/Hibernate.",
             "Developed responsive user interfaces using Angular and Tailwind CSS",
